@@ -32,7 +32,7 @@ public class CalendarsController {
     model.addAttribute("planForm", new PlanForm());
     List<Map<String, Object>> weekDays = getWeek();
     model.addAttribute("weekDays", weekDays);
-    return "calendars/index";
+    return "redirect:/";
   }
 
   // 予定の保存
